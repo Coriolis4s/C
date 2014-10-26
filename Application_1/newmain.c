@@ -77,7 +77,7 @@
     printf("line: %s\n", buffer);
 }*/
 
-main()  { /*this doesn't work'*/
+/*main()  {
     char word[] = "abracadabra";
     char *ptr;
     ptr = word;
@@ -86,5 +86,20 @@ main()  { /*this doesn't work'*/
         ptr++;
     }
     printf("\n");
+    return(EXIT_SUCCESS);
+}*/
+
+main()  {
+    char word[30];
+    char *ptr;
+
+    printf("Enter your name:\n");
+    scanf("%s", word);
+    printf("%s", word);
+
+    /*ptr=word;
+    while (*ptr!='\0')  {
+        printf("%c", *ptr);
+    }*/
     return(EXIT_SUCCESS);
 }
